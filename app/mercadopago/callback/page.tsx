@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 export default function CallbackMercadoPago() {
 
-    const [status, setStatus] = useState<Boolean>(false);
+    const [status, setStatus] = useState(false);
 
     const getCode = async ()=>{
         const urlParams = new URLSearchParams(window.location.search);
